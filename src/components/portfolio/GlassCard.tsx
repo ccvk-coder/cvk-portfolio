@@ -36,15 +36,19 @@ export function SectionHeading({
   eyebrow,
   title,
   description,
+  id,
 }: {
   eyebrow: string;
   title: string;
   description?: string;
+  id?: string;
 }) {
   return (
     <header className="mb-6 max-w-2xl sm:mb-8">
       <p className="label-meta">{eyebrow}</p>
-      <h2 className="mt-2 text-2xl font-bold sm:text-3xl">{title}</h2>
+      <h2 id={id} className="mt-2 text-2xl font-bold sm:text-3xl">
+        {title}
+      </h2>
       {description ? (
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-base">
           {description}
