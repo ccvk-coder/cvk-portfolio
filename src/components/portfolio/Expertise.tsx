@@ -9,13 +9,11 @@ export function Expertise() {
   return (
     <section id="expertise" aria-labelledby="expertise-title" className="scroll-mt-24">
       <SectionHeading
+        id="expertise-title"
         eyebrow="Capabilities"
         title="Expertise"
         description="Six areas I work in daily, from product design through to support and documentation."
       />
-      <span id="expertise-title" className="sr-only">
-        Expertise
-      </span>
 
       <ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {expertise.map((item, i) => {

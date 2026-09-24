@@ -10,13 +10,11 @@ export function About() {
   return (
     <section id="about" aria-labelledby="about-title" className="scroll-mt-24">
       <SectionHeading
+        id="about-title"
         eyebrow="Profile"
         title="About Me"
         description="A multidisciplinary technology professional working across design, development, and systems."
       />
-      <span id="about-title" className="sr-only">
-        About me
-      </span>
 
       <div className="grid gap-4 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
         <Reveal>
